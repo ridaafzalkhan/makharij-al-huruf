@@ -8,80 +8,72 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity2 extends AppCompatActivity {
-
-    Button Halqiyah ,Lahatiyah,Shajariyah,Tarfiyah,Niteeyah,Lisaveyah,Ghunna;
-
+    Button hal,lah,tar,sha,nit,lis,ghu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Halqiyah = (Button) findViewById(R.id.Halqiyah);
-        Halqiyah.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_main2);
+        hal=(Button) findViewById(R.id.button2);
+        hal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(MainActivity2.this, MainActivity3.class);
-                newIntent.putExtra("buttonName", "Halqiyah");
-                startActivity(newIntent);
+                Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                intent.putExtra("btn","halqiyah");
+                startActivity(intent);
             }
         });
-        Lahatiyah = (Button) findViewById(R.id.Lahatiyah);
-        Lahatiyah.setOnClickListener(new View.OnClickListener() {
+        lah=(Button) findViewById(R.id.button3);
+        lah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(MainActivity2.this, MainActivity3.class);
-                newIntent.putExtra("buttonName", "Lahatiyah");
-                startActivity(newIntent);
-
+                Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                intent.putExtra("btn","lahatiyah");
+                startActivity(intent);
             }
         });
-        Shajariyah = (Button) findViewById(R.id.Shajariyah);
-        Shajariyah.setOnClickListener(new View.OnClickListener() {
+        sha=(Button) findViewById(R.id.button6);
+        sha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(MainActivity2.this, MainActivity3.class);
-                newIntent.putExtra("buttonName", "Shajariyah");
-                startActivity(newIntent);
-
+                Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                intent.putExtra("btn","shajariyah");
+                startActivity(intent);
             }
         });
-        Tarfiyah = (Button) findViewById(R.id.Tarfiyah);
-        Tarfiyah.setOnClickListener(new View.OnClickListener() {
+        tar=(Button) findViewById(R.id.button5);
+        tar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(MainActivity2.this, MainActivity3.class);
-                newIntent.putExtra("buttonName", "Tarfiyah");
-                startActivity(newIntent);
-
+                Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                intent.putExtra("btn","tarfiyah");
+                startActivity(intent);
             }
         });
-        Niteeyah = (Button) findViewById(R.id.Niteeyah);
-        Niteeyah.setOnClickListener(new View.OnClickListener() {
+        nit=(Button) findViewById(R.id.button4);
+        nit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(MainActivity2.this, MainActivity3.class);
-                newIntent.putExtra("buttonName", "Niteeyah");
-                startActivity(newIntent);
-
+                Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                intent.putExtra("btn","niteeyah");
+                startActivity(intent);
             }
         });
-        Lisaveyah = (Button) findViewById(R.id.Lisaveyah);
-        Lisaveyah.setOnClickListener(new View.OnClickListener() {
+        lis=(Button) findViewById(R.id.button7);
+        lis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(MainActivity2.this, MainActivity3.class);
-                newIntent.putExtra("buttonName", "Lisaveyah");
-                startActivity(newIntent);
-
+                Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                intent.putExtra("btn","lisaveyah");
+                startActivity(intent);
             }
         });
-        Ghunna = (Button) findViewById(R.id.Ghunna);
-        Ghunna.setOnClickListener(new View.OnClickListener() {
+        ghu=(Button) findViewById(R.id.button8);
+        ghu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent newIntent = new Intent(MainActivity2.this, MainActivity3.class);
-                newIntent.putExtra("buttonName", "Ghunna");
-                startActivity(newIntent);
-
+                Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
+                intent.putExtra("btn","ghunna");
+                startActivity(intent);
             }
         });
     }

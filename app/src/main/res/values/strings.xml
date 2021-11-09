@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">makharij al-huruf</string>
+    <string name="repo_url">https://github.com/ridaafzalkhan/makharij-al-huruf.git</string>
 </resources>

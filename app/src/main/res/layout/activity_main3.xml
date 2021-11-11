@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CD92F8"
     tools:context=".MainActivity3">
 
     <TextView
         android:id="@+id/arabic"
         android:layout_width="80dp"
         android:layout_height="190dp"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.117"
@@ -21,6 +23,7 @@
         android:id="@+id/description"
         android:layout_width="203dp"
         android:layout_height="184dp"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.828"
@@ -41,8 +44,11 @@
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="132dp"
-        android:layout_height="38dp"
+        android:layout_width="248dp"
+        android:layout_height="43dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.424"

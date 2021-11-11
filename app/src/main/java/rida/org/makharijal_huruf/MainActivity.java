@@ -17,13 +17,41 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn1 = (Button) findViewById(R.id.button);
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent newIntent = new Intent(MainActivity.this, MainActivity2.class);
-                newIntent.putExtra("buttonName", "btn1");
-                startActivity(newIntent);
-            }
-        });
+        btn2= (Button) findViewById(R.id.test);
+        btn3= (Button) findViewById(R.id.repo);
+        if(btn1!=null) {
+            btn1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent newIntent = new Intent(MainActivity.this, MainActivity2.class);
+                    newIntent.putExtra("buttonName", "btn1");
+                    startActivity(newIntent);
+                }
+            });
+        }
+        if(btn2!=null) {
+            btn2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent newIntent = new Intent(MainActivity.this, MainActivity4.class);
+                    newIntent.putExtra("buttonName", "btn1");
+                    startActivity(newIntent);
+                }
+            });
+        }
+        if(btn3!=null) {
+            btn3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent newIntent;
+                    String url=getString(R.string.repo_url);
+                    Uri webpage=Uri.parse(url);
+                    newIntent=new Intent(Intent.ACTION_VIEW,webpage);
+                    startActivity(newIntent);
+                }
+            });
+        }
+
+
     }
 }
